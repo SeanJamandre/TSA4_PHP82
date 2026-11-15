@@ -1,0 +1,2 @@
+@extends('layouts.tasks')
+@section('content')<h1>About this system</h1><div class="panel"><p>Tasks for Today is a Laravel task management application for IT0049 Technical Summative Assessment 4.</p><p>Visitors can browse public pages and tasks. Registered users can manage the shared task list. Archived tasks stay in the database and disappear from public results.</p><p>When an existing task changes from another status to done, the application generates a completion email for the configured recipient.</p></div>@endsection

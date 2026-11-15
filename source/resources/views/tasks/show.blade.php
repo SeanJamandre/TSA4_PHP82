@@ -1,0 +1,2 @@
+@extends('layouts.tasks')
+@section('content')<a href="{{ route('tasks.index') }}">← All tasks</a><div class="panel"><h1>{{ $task->title }}</h1><p class="muted">Due {{ $task->due_date->format('M d, Y') }} · {{ ucfirst($task->priority) }} priority · {{ str_replace('_',' ', $task->status) }}</p><pre>{{ $task->description ?: 'No description provided.' }}</pre>@auth<a class="button" href="{{ route('tasks.edit', $task) }}">Edit task</a>@endauth</div>@endsection

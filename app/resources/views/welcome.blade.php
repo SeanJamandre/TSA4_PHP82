@@ -1,0 +1,2 @@
+@extends('layouts.tasks')
+@section('content')<p class="muted">PLAN YOUR DAY</p><h1>A little structure.<br>A lot more progress.</h1><p>Keep track of your work, update your progress, and celebrate every finished task.</p><div class="panel"><h2>Your next step starts here</h2><p>Browse the task list anytime. Log in to create, edit, or archive tasks.</p><a class="button" href="{{ route('tasks.index') }}">View tasks</a></div>@endsection
